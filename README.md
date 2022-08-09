@@ -13,7 +13,16 @@ DB_PASSWORD=<password>
 
 Add this file to ```.gitignore```
 
-In the project directory, you can run:
+Edit the connection with database url 
+
+```
+mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@<clustername>.<databaseid>.mongodb.net/<databasename>?retryWrites=true&w=majority`,
+    {
+    useNewUrlParser: true,
+});
+```
+
+In the project directory:
 
 ### Install Packages 
 
