@@ -13,7 +13,7 @@ DB_PASSWORD=<password>
 
 Add this file to ```.gitignore```
 
-Edit the connection with database url 
+Edit the connection with database your url:
 
 ```
 mongoose.connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@<clustername>.<databaseid>.mongodb.net/<databasename>?retryWrites=true&w=majority`,
